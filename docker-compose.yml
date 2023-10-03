@@ -5,6 +5,8 @@ services:
     pull_policy: build
     restart: unless-stopped
     build:
+      args:
+        - '-u root:root'
       dockerfile: Dockerfile
       context: .
     ports:
