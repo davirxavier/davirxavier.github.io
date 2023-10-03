@@ -6,6 +6,9 @@ services:
     restart: unless-stopped
     user: ${UID}:${GID}
     build:
+      args:
+        UID: ${UID}
+        GID: ${GID}
       dockerfile: Dockerfile
       context: .
     ports:
