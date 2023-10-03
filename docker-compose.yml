@@ -4,6 +4,7 @@ services:
   mydomainpage:
     pull_policy: build
     restart: unless-stopped
+    user: ${UID}:${GID}
     build:
       dockerfile: Dockerfile
       context: .
