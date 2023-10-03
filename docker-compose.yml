@@ -8,5 +8,5 @@ services:
       dockerfile: Dockerfile
       context: .
     ports:
-      - "46600:80"
-      - "46601:443"
+      - "${HTTP_PORT}:80"
+      - "${HTTPS_PORT}:443"

@@ -1,4 +1,5 @@
 FROM httpd:alpine
+USER root
 
 RUN apk add --no-cache git
 RUN git clone https://github.com/davirxavier/mydomainhomepage.git repo
