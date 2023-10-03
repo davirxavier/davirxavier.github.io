@@ -4,9 +4,8 @@ services:
   mydomainpage:
     pull_policy: build
     restart: unless-stopped
+    user: root
     build:
-      args:
-        - '-u root:root'
       dockerfile: Dockerfile
       context: .
     ports:
