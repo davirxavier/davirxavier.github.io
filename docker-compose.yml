@@ -1,10 +1,9 @@
-version: "3"
+version: "3.8"
 
 services:
   mydomainpage:
     pull_policy: build
     restart: unless-stopped
-    user: root
     build:
       dockerfile: Dockerfile
       context: .

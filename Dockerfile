@@ -1,8 +1,4 @@
-FROM httpd:alpine
-USER root
-
-RUN apk add --no-cache git
-RUN git clone https://github.com/davirxavier/mydomainhomepage.git repo
+FROM httpd:latest
 
 RUN rm /usr/local/apache2/htdocs/index.html
-RUN mv -v repo/* /usr/local/apache2/htdocs/
+COPY . /usr/local/apache2/htdocs/
