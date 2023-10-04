@@ -91,14 +91,17 @@
         }
 
         .proj-img {
-            display: inline-block;
+            width: 50%;
+            max-width: 50%;
             min-width: 50%;
-            min-height: 50%;
             border-radius: 50%;
+        }
 
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
+        .proj-img.smaller {
+            width: 45%;
+            max-width: 45%;
+            min-width: 45%;
+            margin-top: 1rem;
         }
 
         .card-proj:hover {
@@ -314,7 +317,7 @@
 
 <div class="absolute text-center myself">
     <div class="prof ml-auto mr-auto mt-3">
-        <div class="proj-img davi"></div>
+        <img class="proj-img davi" src="img/davi.jpg" alt="Davi">
     </div>
     <div class="prof-text">
         <h2 class="font-weight-bold text-white ml-3 mt-4">Davi Xavier</h2>
@@ -327,37 +330,27 @@
     <h6 class="text-muted mr-3 d-none" id="project-label"><b>Meus projetos:</b></h6>
 
     <a class="card-proj glassy d-flex flex-column align-items-center justify-content-center text-white text-decoration-none" href="/qxut" target="_blank">
-        <div class="proj-img qxut mt-2">
-        </div>
-
+        <img src="img/qxut.png" class="proj-img" alt="Qxut">
         <h6 class="mt-2"><b>QXut</b></h6>
     </a>
 
     <a class="card-proj glassy d-flex flex-column align-items-center justify-content-center text-white text-decoration-none" href="/epr" target="_blank">
-        <div class="proj-img epr mt-2">
-        </div>
-
+        <img src="img/epr.png" class="proj-img" alt="EPR">
         <h6 class="mt-2"><b>EPR</b></h6>
     </a>
 
     <a class="card-proj glassy d-flex flex-column align-items-center justify-content-center text-white text-decoration-none" href="/agenda-celulas/app" target="_blank">
-        <div class="proj-img ac mt-3">
-        </div>
-
+        <img src="img/ac.png" class="proj-img smaller" alt="Agenda de células">
         <h6 class="form-control-sm text-center"><b>Agenda de Células</b></h6>
     </a>
 
     <a class="card-proj glassy d-flex flex-column align-items-center justify-content-center text-white text-decoration-none" href="/agenda-celulas/api/docs" target="_blank">
-        <div class="proj-img ac mt-3">
-        </div>
-
+        <img src="img/ac.png" class="proj-img smaller" alt="Agenda de células">
         <h6 class="form-control-sm text-center"><b>Agenda de Células - API</b></h6>
     </a>
 
     <a class="card-proj glassy d-flex flex-column align-items-center justify-content-center text-white text-decoration-none" href="/qxjourney" target="_blank">
-        <div class="proj-img ac mt-3">
-        </div>
-
+        <img src="img/ac.png" class="proj-img" alt="QxJourney">
         <h6 class="form-control-sm text-center"><b>QxJourney</b></h6>
     </a>
 
